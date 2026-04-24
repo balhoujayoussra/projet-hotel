@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>login</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+        <style>
+            *{
+                margin:0;
+                padding:0;
+                box-sizing:'border-box';
+                font-family:'Inter',sans-serif;
+            }
+
+            body{
+                height:100vh;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                background: linear-gradient(100deg, #395a3d, #243b5a);
+            }
+            .box{
+                position:relative;
+                width:25%;
+                background: rgba(255, 255, 255, 0.06);
+                border-radius:16px;
+                padding:40px;
+                box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+                border: 1px solid rgba(255,255,255,0.1);
+            }
+            .titre{
+                text-align:center;
+                color: #222222;
+                padding-bottom:20px;
+            }
+            .one{
+                position: relative;
+                margin-bottom: 18px;
+            }
+            .one input{
+                width:90%;
+                background: rgba(255,255,255,0.08);
+                border:1px solid rgba(255,255,255,0.15);
+                color:#222222;
+                border-radius:10px;
+                padding: 12px 12px 12px 38px;
+                outline: none;
+            }   
+            .one i{
+                position:absolute;
+                top: 32%;
+                left:12px;
+                color: #222222;
+            }    
+            .one input:focus{
+                
+                box-shadow: 0 0 10px rgb(105, 170, 122);
+            } 
+            button{
+                width:357px;
+                padding: 12px 12px 12px 12px;
+                background: linear-gradient(140deg, #395a3d, #243b5a);
+                border:none;
+                border-radius:10px;
+                color:#222222;
+                font-weight:600;
+                cursor: pointer;
+                transition: 0.3s;
+            }
+            .oublier{
+                color:white;
+                font-size: 13px;
+                color: #222222;
+                text-align:center;
+                margin-top:15px;
+            }
+            .oublier a{
+                color: #4fad89;
+                text-decoration: none;
+            }
+            button:hover{
+                border-color:rgba(48, 191, 252, 0.97);
+                box-shadow: 0 0 10px rgb(105, 170, 122);
+            }
+            .oublier a:hover{
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+    <body>
+         <div class="box">
+            <h2 class="titre">Connexion</h2>
+            <form action="login.php" method="POST">
+                <div class="one">
+                    <i class="fa fa-user"></i>
+                    <input type="email" name="email" placeholder="Email">
+                </div>
+                <div class="one">
+                    <i class="fa fa-lock"></i>
+                    <input type="password" name="motDePasse" placeholder="Mot de passe">
+                </div>
+                <button type="submit">Se connecter</button>
+            </form>
+            <div class="oublier">
+                Mot de passe oublié ? <a href=".">Récupérer</a>
+            </div>
+        </div>
+    <body>
+    </body>
+</html>
